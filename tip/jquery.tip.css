@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+html .tip,
+body .tip {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+html .tip .panel,
+body .tip .panel {
+  position: absolute;
+  width: 350px;
+  height: 150px;
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid #E9E9E9;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto auto;
+}
+html .tip .panel .close,
+body .tip .panel .close {
+  width: 100%;
+  min-height: 30px;
+}
+html .tip .panel .close .fa-close,
+body .tip .panel .close .fa-close {
+  display: block;
+  float: right;
+  color: #666;
+  padding: 6px 9px 6px 6px;
+  cursor: pointer;
+  -webkit-transform: scale(1.2, 1.2);
+  -ms-transform: scale(1.2, 1.2);
+  transform: scale(1.2, 1.2);
+}
+html .tip .panel .close .fa-close:hover,
+body .tip .panel .close .fa-close:hover {
+  color: #333;
+}
+html .tip .panel .text,
+body .tip .panel .text {
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  line-height: 70px;
+}
+html .tip .panel .button,
+body .tip .panel .button {
+  width: 100%;
+  height: 30px;
+  text-align: center;
+}
+html .tip .panel .button span,
+body .tip .panel .button span {
+  font-size: 14px;
+  border: 1px solid #999;
+  padding: 5px 15px;
+  border-radius: 3px;
+  margin: 3px;
+  cursor: pointer;
+}
+html .tip .panel .button span:hover,
+body .tip .panel .button span:hover {
+  background-color: #1F83FF;
+  border: 1px solid #1F83FF;
+  color: white;
+}
+html .tip .panel .button .active,
+body .tip .panel .button .active {
+  background-color: #1F83FF;
+  border: 1px solid #1F83FF;
+  color: white;
+}
+/*# sourceMappingURL=jquery.tip.css.map */

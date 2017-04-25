@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>异步文件上传</title>
+        <script src="libs/jquery.js"></script>
+        <script src="libs/jquery.form.js"></script>
+    </head>
+    <body>
+    	
+        <form id="upload">
+            <input type="file" name="file" id="file" multiple/>
+            <input type="submit" value="上传" id="submit"/>
+        </form>
+        
+        <script>
+        	
+        	/**
+	         * 获取被选择的文件信息(限制大小20mb)
+	         */
+	        $('#file').change(function(e){
+	        	
+	        	 console.log(this.files)
+	        })
+	        
+	
+	        /**
+	         * 初始化上传
+	         */
+	        $('#upload').ajaxForm({
+	
+	            type:'post',
+	
+	            url:'server.php',
+	
+	            uploadProgress:function(e,loaded,total,percent) 
+	            {
+	                console.log('上传进度'+percent)
+	            },
+	
+	            complete: function(e) 
+	            {
+	                console.log('上传完成-服务器返回:'+e.responseText)
+	            }
+	        })
+	    
+        </script>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+html .loading,
+body .loading {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+}
+html .loading .panel,
+body .loading .panel {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  border: 1px solid #E9E9E9;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto auto;
+}
+html .loading .panel i,
+body .loading .panel i {
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 80px;
+  margin-left: 15px;
+}
+/*# sourceMappingURL=loading.css.map */

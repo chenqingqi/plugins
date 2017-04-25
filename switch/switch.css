@@ -1,0 +1,13 @@
+.checkbox-switch
+{
+    padding-left: 20px;
+    background-image: url(checkbox-ico.png);
+    background-repeat: no-repeat;
+    background-position-y: 2px;
+    cursor: pointer;
+}
+
+input[type=checkbox]:checked + label
+{
+    background-position-y: -17px;
+}

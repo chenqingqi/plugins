@@ -1,0 +1,46 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=640, user-scalable=no" />
+	<title>JWPlayerVR</title>
+    <script src="jwplayer.js"></script>
+    <script>jwplayer.key="bAoNHra71KE/mHvb0sirT4HeWLTAkpiYa1mVsA==";</script>
+    
+    <style>
+    	*
+    	{
+    		margin : 0;
+    		padding: 0;
+    	}
+    </style>
+</head>
+
+<body>
+	
+    <div id="video">正在初始化播放器...</div>
+    
+    <script>
+    
+    	var player = jwplayer("video");
+	    	
+    	player.setup({
+    		
+	        //file: "/video.flv",
+	        file: "/video.mp4",
+	        //file: "http://211.22.61.109/sta/ch323059.m3u8",
+	        image: "",
+	        width: 640,
+	        height: 360,
+	        title: 'HTML5-VR测试',
+	        description: '支持m3u8流和mp4流VR效果，支持flv的普通播放',
+	        plugins: 
+	        {
+				'/libs/vr.js': '/libs/vr.js'
+			}
+	    })
+	    
+    </script>
+    
+</body>
+</html>
